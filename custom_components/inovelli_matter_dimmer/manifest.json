@@ -1,0 +1,10 @@
+{
+  "domain": "inovelli_matter_dimmer",
+  "name": "Inovelli Matter Switch-to-Dimmer",
+  "version": "0.1.0",
+  "config_flow": true,
+  "dependencies": ["matter"],
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "codeowners": ["@InovelliUSA"]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Inovelli Matter Switch-to-Dimmer",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add a Matter Level Control endpoint",
+        "description": "Create a virtual Home Assistant light for an existing Matter endpoint that exposes On/Off and CurrentLevel.",
+        "data": {
+          "name": "Name",
+          "node_id": "Matter node ID",
+          "endpoint_id": "Matter endpoint ID"
+        },
+        "data_description": {
+          "node_id": "The node number shown by the Matter Server dashboard or diagnostics.",
+          "endpoint_id": "The endpoint containing the On/Off and Level Control server clusters."
+        }
+      }
+    },
+    "error": {
+      "matter_not_ready": "The Matter integration is not ready.",
+      "node_not_found": "The Matter node was not found.",
+      "endpoint_not_found": "The endpoint was not found on this node.",
+      "current_level_missing": "The endpoint does not expose LevelControl.CurrentLevel.",
+      "on_off_missing": "The endpoint does not expose OnOff.OnOff."
+    },
+    "abort": {
+      "already_configured": "This Matter node and endpoint are already configured."
+    }
+  }
+}
